@@ -1,0 +1,50 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbarone{
+    background-color: aquamarine;
+    color: black;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+}
+.imgLogo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.brandname{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 30px;
+}
+.menus{
+    display: flex;
+    gap: 10px;
+    margin: 30px;
+}
+.navitem:link{
+    color: blue;
+    text-decoration: none;
+    font-size: larger;
+}
+.navitem:hover{
+    border-bottom: 2px solid red;
+}
+.navitem:active{}
+.navitem:visited{
+    color: brown;
+}
+
+.activeone{
+   font-size: 800; 
+}

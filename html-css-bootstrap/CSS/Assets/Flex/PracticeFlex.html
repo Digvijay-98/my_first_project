@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .containerflex{
+            background-color: bisque;
+            width: 700px;
+            height: 700px;
+            display: flex;
+            gap: 10px;
+            /* flex-direction: row-reverse; */
+            justify-content: space-between;  /* horizontally align */
+            align-items: center;         /* vertically align */
+            flex-wrap: wrap;
+        }
+        .box{
+            background-color: azure;
+            height: 100px;
+            width: 100px;
+        }
+        .itemOne{
+            flex: 1;
+            order: 1;
+        }
+        .itemTwo{
+            flex: 1;
+            order: 2;
+        }
+        .itemThree{
+            flex: 2;
+            order: 3;
+        }
+        .itemFour{
+            flex: 3;
+            order: 4;
+        }
+        .itemFive{
+            flex: 1;
+            order: 5;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="containerflex">
+        <div class="box itemOne">111</div>
+        <div class="box itemTwo">222</div>
+        <div class="box itemThree">333</div>
+        <div class="box itemFour">444</div>
+        <div class="box itemFive">555</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title text-color="red">Student Admission Form</title>
+</head>
+<body>
+    <h1>Student Admission Form</h1>
+    <form>
+        <label for="fName">  Full Name</label>
+        <input id="fName" type="text" pattern="[a-zA-z]+" placeholder="add your full name " required>
+      <br>
+      <br>
+         <label for="emailinput">Email</label>
+         <input id="emailinput" type="email" pattern="[a-zA-Z._0-9]@gmail.com" placeholder="eg:john.doe123@gmail.com"  name="email" required>
+      <br>
+      <br>
+         <label  for="passward">Passward</label>
+         <input type="passward" name="passward" id="passward" placeholder="enter your passward" required>
+      <br>
+      <br>
+         <label for="mobileNum">Mobile Number</label>
+         <input type="text" pattern="+91[^9876]{1}[0-9]{9}" placeholder="+91-9999999999" id="mobileNum" name="mobileNum" required>
+       <br>
+       <br>
+         <label for="birthdate">Date of Birth</label>
+         <input type="date" name="DOB" id="birthdate"
+          placeholder="dd/mm/yyyy"   required>
+      <br>
+      <br>
+          <label> Gender</label>
+          <input type="radio" name="gender" value="male" id=""><label for="male">male</label>
+          <input type="radio" name="gender" value="female" id=""><label for="female">female</label>
+      <br>
+      <br>
+          <label> Hobbies in Subjects</label>
+          <input type="checkbox" name="" id="eng" name="subject1" value="english">
+          <label for="english">English</label>
+          <input type="checkbox" name="" id="hindi" name="subjectw" value="hindi"> 
+          <label for="hindi">Hindi</label>
+          <input type="checkbox" name="" id="marathi" name="subject3" value="marathi"> 
+          <label for="marathi">Marathi</label>
+      <br> 
+      <br>
+          <label>Address </label>
+          <input type="text-area" placeholder="enter your address" name="address"  required>
+      <br> 
+      <br>
+         <label type="dropdown-button"> Courses</label> 
+            <select name="subject" id="" multiple>
+             <option value="Arts">Arts</option>
+             <option value="Commerce">Commerce</option>
+             <option value="Science">Science</option>
+            </select>
+      <br>
+      <br>
+         <label >Upload Profile Picture</label>  
+         <input type="file" name="" id="ptofile" required>
+      <br>
+       <br>
+          <label for=""> Select Favorite Color</label>
+          <input type="color" name="color" id="" value="#00ff00">
+      <br> 
+      <br>
+          <label for="percentage">Percentage</label>
+          <input type="range" min="0" max="100" value="50" name="percentage" id="percentage">
+      <br>
+       <br>
+           
+           <input type="submit">
+          <input type="reset">
+
+
+            
+
+    </form>
+</body>
+</html>

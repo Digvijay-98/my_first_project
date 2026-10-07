@@ -1,0 +1,253 @@
+:root{
+    --info-color: #0dcaf0;
+    --gray-color: #dea60d;
+}
+.customavlink{
+    background-color: white;
+    border : 0 ;
+}
+.customavlink:hover{
+    color: var(--info-color);
+    
+}
+.customeInfoBTN{
+    background-color: var(--info-color) !important;
+    border: 0 !important;
+}
+.customeInfoBTN:hover{
+    background-color: red !important;
+}
+.iconsNavbar{
+font-size:18px;
+}
+.navbartwo{
+    text-align: center;
+    display: flex;
+}
+.nav-item{
+}
+.customNotifyCount{
+  font-size: 10px !important; 
+}
+.customImgCoro{
+     height: 700px;
+     
+}
+.customForCustome{
+
+}
+.boxDetails{
+    display: flex;
+}
+.customcareicon i{
+font-size: 22px;
+padding-right:36px
+}
+.customCareContent{
+    font-size: 14px;
+    color: var(--gray-color);
+}
+.customTwoImgSection{
+
+}
+.Airoplane{
+    background-color: red;
+    display: flex;
+}
+.annimationForText{}
+.annimationForImg{}
+.annimationForImg img{
+   mix-blend-mode: multiply;
+   width: 200px;
+   height: 200px;
+}
+.Animal{
+    background-color: #0dcaf0;
+    display: flex;
+    overflow: hidden;
+
+}
+.annimationForText h3{
+    width: 50%;
+    font-size: 40px;
+    font-weight: 600;
+}
+.annimationForText{
+    transition: transform 2s;
+    padding: 30px 15px;
+}
+.Airoplane  img, .Animal img{
+        transition: transform 2s;
+}
+.Airoplane:hover img , .Animal:hover img{
+    transform: scale(1.5,1.5);
+}
+.Airoplane:hover .annimationForText, .Animal:hover .annimationForText{
+transform: translateY(-5px);
+}
+
+/* card css */
+.customYellowStar{
+    color: rgb(185, 185, 11);
+}
+.customBTNCard{
+    display: flex;
+    justify-items: normal;
+}
+.card:hover{
+    border: 1px solid var(--infoColor) !important;
+
+}
+.customCardProduct{
+    position: absolute;
+        
+}
+.customCardProduct:hover .customBTNCard, .customCardProduct:hover .searchIcon{
+    display: block !important;
+}
+.customCardProduct:hover .searchIcon{
+    background-color: var(--infoColor) ;
+    color: white;
+}
+.searchIcon{
+    display: none;
+    position: absolute;
+    left:6rem;
+    top:5rem;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 14px;
+    
+}
+
+.cardOne{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 185px;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* Hide radio buttons */
+
+.slider input {
+    display: none;
+}
+
+
+/* Logo container */
+
+.logos {
+    display: flex;
+
+    width: 200%;
+
+    transition: transform 0.5s ease;
+}
+
+
+/* Each logo */
+
+.logo {
+    width: 12.5%;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.logo img {
+    max-width: 190px;
+    max-height: 80px;
+
+    object-fit: contain;
+}
+
+
+/* Buttons */
+
+.arrow {
+    position: absolute;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    background: white;
+    border: 1px solid #ddd;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    color: #777;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    user-select: none;
+}
+
+
+/* Left button */
+
+.left {
+    left: 12px;
+}
+
+
+/* Right button */
+
+.right {
+    right: 12px;
+
+    background: #32a9df;
+    color: white;
+    border: none;
+}
+
+
+/* When second radio is selected */
+
+#slide2:checked ~ .logos {
+    transform: translateX(-50%);
+}
+
+
+/* Change left button when slide 2 is active */
+
+#slide2:checked ~ .left {
+    background: #32a9df;
+    color: white;
+    border: none;
+}
+
+
+/* Change right button when slide 2 is active */
+
+#slide2:checked ~ .right {
+    background: white;
+    color: #777;
+    border: 1px solid #ddd;
+}

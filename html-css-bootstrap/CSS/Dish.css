@@ -1,0 +1,82 @@
+:root{
+
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: gray;
+}
+.headerone h1{
+    margin-top: 15px; 
+}*/
+.headerimg{
+    /* width: 100%; */
+    width: 100%;
+    /* height: 26rem; */
+    height: 35vh;
+}
+
+
+
+.UniqueExp p{
+    width: 50%;
+    margin: 30px auto;
+    font-size: 25px;
+}
+
+.headerone h1, .UniqueExp p{
+    text-align: center;
+}
+.SecIngredients{
+    height: 550px;
+    background-image: url(C:\B98\html-css-bootstrap\css\assets);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.SecIngredients h2{
+    /* text-align: center; */
+    margin-left: 300px;
+    padding-top: 40px;
+    font-size: ;
+    font-weight: 900;
+}
+ul#Ingredients{
+    list-style-type: lower-roman;
+    font-size: large;
+}
+.testing{
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+    /*padding: 30px; to all four side*/
+
+    /*padding: 30px 10px fvalue top & bottom svalue left right;*/
+    /*padding: 30px 10px 50px; */
+    padding: 30px 10px 50px 100px;
+    /* padding-left: 100px;
+    padding-bottom: 50px;
+    padding-right: 10px;
+    padding-top: 30px; */
+    border: 5px solid black;
+    /*margin: 10px;*/
+   /* margin-top: 40px;
+    margin-left: 100px;
+    margin-left: 60px;
+    margin-bottom: 20px;*/
+    margin: 40px 60px 20px 100px;
+
+    /* border: 5px solid black ; */
+    /* border-style: solid; */     
+    border-left: 5px solid red;
+    border-top: 5px blue;
+    border-right: 5px yellow ;
+    border-bottom: 5px orange;
+
+    
+
+}

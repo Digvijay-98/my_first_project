@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    gap: 9px;
+    height: 100vh-63px;
+}
+body{
+    background-color: rgb(30, 32, 30);
+    color: white ;
+    font-family: arial, sans-serif;
+} 
+
+.navbar{
+    height: 63px;
+    background-color: rgb(30, 32, 30);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+}
+.nav-left{
+    display: flex;
+    font-size: 36px;
+    text-decoration: none;
+}
+.spotify-logo{
+    color: white;
+    font-size: 36px;
+    text-decoration: none;
+}
+.home-btn{
+    width: 54px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgb(38, 38, 38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+.search-box{
+    width: 400px;
+    height: px54;
+    background-color: #242424;
+    border-radius: 25px;
+    display: flex;
+    aloign-items: center;
+    padding: 0 15px;
+}
+.search-icon{
+    color: white;
+    font-size: 36px;
+}
+.search-box input{
+   flex: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0 10px;
+    font-size: 16px;
+}
+.search-box input::placeholder{
+    color: #b3b3b3
+}
+.search-library {
+    background: transparent;
+    border: none;
+    color: #b3b3b3;
+    font-size: 18px;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-right a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+.nav-right a:hover {
+    color: white;
+}
+
+.divider {
+    width: 1px;
+    height: 25px;
+    background-color: #777;
+}
+.install-app {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.signup {
+    color: white !important;
+}
+
+.login-btn {
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 12px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* aside left box  */
+.asidebar{
+    width: 400px;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+.yourLibrary{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.asideCard{
+    background-color: rgb(38, 38, 38);
+    width:300px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 10px;
+}
+.asidebar h4{
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+.asidebar p{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 18px;
+    line-height: 9px;
+}
+
+.sidebar-footer {
+    margin-top: 25px;
+    padding: 5px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.footer-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.lang-btn {
+    margin-top: 25px;
+    padding: 9px 17px;
+    background-color: transparent;
+    border: 1px solid #727272;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lang-btn:hover {
+    border-color: white;
+    transform: scale(1.03);
+}
+
+.lang-btn i {
+        margin-right: 8px;
+}
+/* card conatiner  */
+.cardContainer{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    width: 150px;
+    border-radius: 0;
+    transition: 0.3s;
+}
+.imgCard{
+    width: 120px;
+    height: 120px;
+}
+.songName{}
+.artistList{}
+.playBTN{
+    display: none;
+    background-color: green;
+    border-radius: 50%;
+    padding: 10px;
+    border: 0;
+    
+    top: 47%;
+    right: 15%;
+}
+.card:hover .playBTN{
+    display: inline-block;
+}
+
+/* signup bottom  */
+.signUp{
+    width: 100%;
+    height: 100px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right,rgb(249, 51, 232),rgb(38, 205, 235));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+.cardtwo{
+
+}
+.artistName{
+
+}
+.artistListRishta{
+
+}
