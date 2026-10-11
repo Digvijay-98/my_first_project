@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-Digit OTP Validation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="otp-container">
+        <img src="./vc.webp" alt="">
+        <h2>Verification code </h2>
+        <p>We have sent a verification code to your registered mobile number.</p>
+        
+        <!-- The 4 OTP blocks -->
+        <div class="otp-inputs">
+            <input type="text" maxlength="1" class="otp-box" inputmode="numeric">
+            <input type="text" maxlength="1" class="otp-box" inputmode="numeric">
+            <input type="text" maxlength="1" class="otp-box" inputmode="numeric">
+            <input type="text" maxlength="1" class="otp-box" inputmode="numeric">
+        </div>
+
+        <button id="verify-btn">Verify OTP</button>
+        <p id="message"></p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
