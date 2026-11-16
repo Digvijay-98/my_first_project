@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!--------- task 1 --------->
+    <h3 id="message">welcome students</h3>
+    <button id="btn" onclick="moveTo()">click</button>
+
+
+    <!--********* Task 2 ********* -->
+ 
+    <p> Positivity always wins… Always. </p>
+    <p>One small positive thought can change your whole day.</p>
+    <P>Hope is the most exciting thing there is in life</P>
+    <p>he happiness of your life depends on the quality of your thoughts.</p>
+
+    <!---------task 1 --------->
+    <script>
+        const messages = [
+            "welcome to JavaScript DOM",
+        
+        ];
+
+        let index = 0;
+
+        function moveTo() {
+            index = (index + 1) % messages.length;
+            document.getElementById("message").textContent = messages[index];
+        }
+    </script>
+
+<!--********* Task 3 *********-->
+    <script>
+     
+    </script>
+</body>
+</html>

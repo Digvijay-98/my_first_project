@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- task 3 -->
+    <div>
+        <li>c</li>
+        <li>c++</li>
+        <li>javascript</li>
+        <li>python</li>
+        <button>Update Language</button>
+    </div>
+
+    <!-- task 4 -->
+     <div class=""></div>
+     <div class=""></div>
+     <div class=""></div>
+     <div class=""></div>
+     <div class=""></div>
+     <div class=""></div>
+
+     <button id="updateCards">Update All cards</button>
+    
+
+    <!-- task 3 -->
+    <script>
+        document.querySelector("button").addEventListener("click", function () {
+            document.querySelectorAll("li").forEach(function (item) {
+                item.textContent = "update languaged";
+            });
+        });
+    </script>
+
+    <!-- task 4 -->
+     <script>
+        document.getElementById("updateCards").addEventListener("click")
+     </script>
+
+</body>
+
+</html>
+

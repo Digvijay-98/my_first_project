@@ -32,6 +32,8 @@ delete student.age
 
 // CRUD create Read Update Delete 
 
+console.log("+++++++++++++++++++++++++++++++++++++");
+
 
 // for in  
 for(k in student){
@@ -50,7 +52,7 @@ Object.keys(student).map(k=>console.log(k))
 // Object.entries
 console.log(Object.entries(student))
 
-console.log("________________")
+console.log("JSONJSONJSONJSONJSONJSONJSONJSONJSONJSON")
 
 studentString = JSON.stringify(student)
 console.log(studentString)

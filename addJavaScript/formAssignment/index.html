@@ -1,0 +1,125 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #ffffff;
+        }
+        .form-container {
+            max-width: 600px;
+            border: 1px solid #e50e0e;
+            padding: 25px;
+            background-color: #b7f9cc;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .radio-group {
+            margin-top: 5px;
+        }
+        .radio-group label {
+            display: inline-block;
+            margin-right: 15px;
+            font-weight: normal;
+        }
+        .error-message {
+            color: red;
+            font-size: 12px;
+            margin-top: 5px;
+            display: none;
+        }
+        button {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            background-color: #0052a3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Register Form</h2>
+    <!-- Form -->
+    <form id="registrationForm" novalidate>
+        
+        <div class="form-group" >
+            <label for="fullName" >Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your name">
+            <div class="error-message" id="nameError">Name must be at least 3 characters.</div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <div class="error-message" id="emailError">Enter a valid email.</div>
+        </div>
+
+        <div class="form-group">
+            <label for="mobileNumber">Mobile Number</label>
+            <input type="text" id="mobileNumber" name="mobileNumber" placeholder="Enter your mobile number">
+            <div class="error-message" id="mobileError">Enter valid 10-digit mobile number not starting with 0.</div>
+        </div>
+
+        <div class="form-group">
+            <label>Gender</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div>
+            <div class="error-message" id="genderError">Please select your gender.</div>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+            <div class="error-message" id="passwordErrorLength">Password must be at least 6 characters.</div>
+            <div class="error-message" id="passwordErrorUpper">Password must contain at least one uppercase letter.</div>
+            <div class="error-message" id="passwordErrorNumber">Password must not contain any numbers.</div>
+        </div>
+
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
+            <div class="error-message" id="confirmPasswordError">Passwords do not match.</div>
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>

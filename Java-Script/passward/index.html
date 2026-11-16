@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <!-- Bootstrap 5 CSS for modern styling -->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <!-- FontAwesome for the lock icon -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-light d-flex align-items-center min-vh-100">
+
+    <div class="container custom-card bg-white p-4 shadow-sm rounded">
+        <!-- Title Header -->
+        <h2 class="mb-4 text-start fs-4 fw-bold">
+            <span class="text-warning me-2"><i class="fas fa-lock"></i></span> Password Generator
+        </h2>
+
+        <!-- Password Length Input -->
+        <div class="mb-3">
+            <label for="length" class="form-label  fw-semibold text-secondary small">Password Length:</label>
+            <input type="number" id="length" class="form-control" value="17" min="4" max="50">
+        </div>
+
+        <!-- Checkbox Options -->
+        <div class="mb-3">
+            <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" id="numbers" checked>
+                <label class="form-check-label small" for="numbers">Include Numbers</label>
+            </div>
+            <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" id="uppercase" checked>
+                <label class="form-check-label small" for="uppercase">Include Uppercase</label>
+            </div>
+            <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" id="specials" checked>
+                <label class="form-check-label small" for="specials">Include Special Characters</label>
+            </div>
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="excludeAmbiguous" checked>
+                <label class="form-check-label small" for="excludeAmbiguous">Exclude ambiguous characters (e.g. l, 1, I, o, 0, O)</label>
+            </div>
+        </div>
+
+        <!-- Action Button -->
+        <button id="generateBtn" class="btn btn-primary w-100 mb-4 py-2 fw-semibold">Generate Password</button>
+
+        <!-- Output Field -->
+        <div class="mb-3">
+            <label class="form-label fw-semibold text-secondary small">Generated Password:</label>
+            <input type="text" id="passwordOutput" class="form-control bg-light" readonly>
+        </div>
+
+        <!-- Visibility Toggle -->
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="showPassword" checked>
+            <label class="form-check-label small" for="showPassword">Show Password</label>
+        </div>
+
+        <!-- Strength Indicator Bar -->
+        <div class="progress mb-2" style="height: 8px;">
+            <div id="strengthBar" class="progress-bar bg-success" role="progressbar" style="width: 100%"></div>
+        </div>
+        <p id="strengthText" class="fw-bold small mb-4 text-start">Very Strong</p>
+
+        <!-- Copy Action Button -->
+        <button id="copyBtn" class="btn btn-outline-secondary btn-sm px-3">Copy</button>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>

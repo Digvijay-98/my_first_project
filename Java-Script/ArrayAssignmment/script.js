@@ -37,6 +37,9 @@ clearAllbtn.addEventListener("click", () => {
 
 addnewtaskbtn.addEventListener("click", addNewTask);
 
+
+// Student Marks calculator
+
 const inputmarksElement = document.getElementById("inputmarksElement");
 const addnewmarksbtn = document.getElementById("addnewmarksbtn");
 const calculateTotalMarksbtn = document.getElementById("calculateTotalMarksbtn");
@@ -156,6 +159,9 @@ function clearSingleFilter() {
   document.getElementById("evenNumbersOutput").innerText = "";
   document.getElementById("oddNumbersOutput").innerText = "";
 }
+
+
+// sort names 
 
 let namesStorageArray = [];
 

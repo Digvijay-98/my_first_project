@@ -1,0 +1,22 @@
+/* Restricts the width of the tool card to match the layout in the image */
+.custom-card {
+    max-width: 550px;
+    width: 100%;
+}
+
+/* Custom spacing adjustments for standard inputs */
+.form-control:focus {
+    box-shadow: none;
+    border-color: #e86722;
+}
+
+/* Match layout alignment */
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* button */
+.btn-primary {
+    color: #17c3f7;
+    border-color: #e86722 ;   
+}

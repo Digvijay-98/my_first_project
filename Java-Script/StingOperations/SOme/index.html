@@ -1,0 +1,89 @@
+!
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1 class="display-4 text-center text-primary p-4" style="background-color: #a9d4ff;">String Operations in JAVASCRIPT
+  </h1>
+
+  <div class="container">
+    <input type="text" class="form-control" placeholder="Enter Paragraph here" id="inputPara">
+    <div class="container rounded-5" 
+    style="height: 100px; background-color: #0fd27b;"
+    id="resultDisplay">
+      RESULT will be displayed here....
+    </div>
+  </div>
+
+  <div class="container row ">
+    <div class="col mb-3">
+      <button class="btn btn-primary" onclick="checkVowels()">Check Vowels</button>
+    </div>
+    <div class="col mb-3">
+      <button class="btn btn-primary" onclick="checkConsonants()">Check Consonants</button>
+    </div>
+    <div class="col mb-3">
+      <button class="btn btn-primary" onclick="checkPalindrome()">Check Palindrome</button>
+    </div>
+    <div class="col mb-3">
+      <button class="btn btn-primary" onclick="reverseString()">Reverse String</button>
+    </div>
+
+  </div>
+
+  <br>
+
+  <!-- 2nd line -->
+  <div class="container row ">
+    <div class="col mb-3">
+      <button class=" btn btn-primary" onclick="convertToSmall()">convert to small</button>
+    </div>
+    <div class="col mb-3">
+      <button class="btn btn-primary" onclick="capitalizeString()">Capitalize</button>
+    </div>
+    <div class="col mb-3">
+      <button class="btn btn-primary" onclick="titleCaseString()">Title Case</button>
+    </div>
+    <div class="col mb-3">
+      <button class="btn btn-primary"  onclick="checkPalindrome()">Check Palindrome</button>
+    </div>
+  </div>
+
+  <br>
+
+  <!-- 3rd line -->
+  <div class="container row mt-12">
+    <div class="col  mb-3">
+      <button class=" btn btn-primary" onclick="convertToWord()">Extract the Word</button>
+    </div>
+
+    <div class="col mb-3">
+      <button class="btn btn-primary" onclick="replaceSpacesWithHyphens()">Replace all spaces with hyphens</button>
+    </div>
+
+    <div class="col mb-3">
+      <button class="btn btn-primary" onclick="reverseCharacters()">Reverse Characters</button>
+    </div>
+
+    <div class="col mb-3">
+      <button class="btn btn-primary" onclick="sortWords()">Sort the Words</button>
+    </div>
+  </div>
+
+
+  <script src="./script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
